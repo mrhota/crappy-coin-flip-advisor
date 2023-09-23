@@ -1,0 +1,5 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/clojurescript {:mvn/version "1.11.60"}}
+ :aliases {:build {:main-opts ["-m" "cljs.main" "-O" "advanced" "-c" "mrhota.alphabetsuperset.c"]}
+           :repl  {:main-opts ["-m" "cljs.main" "-c" "mrhota.alphabetsuperset.c" "-r"]}}}
